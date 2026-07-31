@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+
+    <style>
+        /* Root font size */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            background: white;
+        }
+
+        .box {
+            border: 2px solid blue;
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        /* PX */
+        .px {
+            width: 300px;
+            height: 80px;
+            background-color: lightcoral;
+        }
+
+        /* Percentage */
+        .percent {
+            width: 50%;
+            height: 80px;
+            background-color: lightgreen;
+        }
+
+        /* Viewport Width */
+        .vw {
+            width: 50vw;
+            height: 80px;
+            background-color: lightskyblue;
+        }
+
+        /* Viewport Height */
+        .vh {
+            width: 300px;
+            height: 20vh;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* EM */
+        .em {
+            font-size: 2em;
+            background-color: lightpink;
+        }
+
+        /* REM */
+        .rem {
+            font-size: 2rem;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Sizing Units Example</h1>
+
+    <div class="container">
+
+        <div class="box px">
+            Width: 300px
+        </div>
+
+        <div class="box percent">
+            Width: 50%
+        </div>
+
+        <div class="box vw">
+            Width: 50vw
+        </div>
+
+        <div class="box vh">
+            Height: 20vh
+        </div>
+
+        <div class="box em">
+            Font Size: 2em
+        </div>
+
+        <div class="box rem">
+            Font Size: 2rem
+        </div>
+
+    </div>
+
+</body>
+</html>
