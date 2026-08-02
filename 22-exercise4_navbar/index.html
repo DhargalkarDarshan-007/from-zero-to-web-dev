@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        :root{
+            --color:white;
+            --bgcolor:rgb(7, 7, 7);
+            --btncolor:rgb(82, 82, 82);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            margin: 25px;
+            margin-top: 72px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--bgcolor);
+            color: var(--color);
+            height: 100px;      
+            border-radius: 55px;
+        }
+
+        .btn {
+            background-color: var(--btncolor);
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 0px 10px rgb(82, 82, 82);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="btn">Home</div>
+        <div class="btn">About</div>
+        <div class="btn">Services</div>
+        <div class="btn">Contact</div>
+    </div>
+</body>
+
+</html>
