@@ -35,11 +35,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    height: 100px;
 }
 
 nav img {
-    width: 114px;
+    width: 130px;
     position: relative;
     z-index: 10;
 }
@@ -52,7 +52,7 @@ nav button {
 
 .hero {
     font-family: 'Martel Sans', sans-serif;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,9 +85,11 @@ nav button {
 
 }
 
-.separation {
+ .separation {
     height: 7px;
     background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 .btn {
