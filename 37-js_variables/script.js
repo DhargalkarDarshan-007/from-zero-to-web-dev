@@ -75,3 +75,35 @@ console.log(
     typeof r
 );
 
+// ------------------------------------------
+// 6. JavaScript Objects
+// ------------------------------------------
+
+let o = {
+    name: "Harry",
+    "job code": 5600,
+    is_handsome: true
+};
+
+// Display object
+console.log(o);
+
+
+// ------------------------------------------
+// 7. Adding a new property to an object
+// ------------------------------------------
+
+o.salary = "100 crores";
+
+console.log(o);
+
+
+// ------------------------------------------
+// 8. Updating an existing property
+// ------------------------------------------
+
+o.salary = "500 crores";
+
+console.log(o);
+
+
