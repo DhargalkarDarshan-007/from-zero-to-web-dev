@@ -1,4 +1,3 @@
-
 // ==========================================
 // JavaScript Tutorial 55 - Variables & Data Types
 // ==========================================
@@ -24,6 +23,17 @@ let _a = "Shubham";
 // 2. Checking variable values and types
 // ------------------------------------------
 
-console.log(a + b + 8);
-console.log(typeof a, typeof b, typeof c);
+// console.log(a + b + 8);
+// console.log(typeof a, typeof b, typeof c);
 
+
+// ------------------------------------------
+// 3. Block Scope
+// ------------------------------------------
+
+{
+    let a=66;
+    console.log(a);
+}
+
+console.log(a);
