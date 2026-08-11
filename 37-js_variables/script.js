@@ -37,3 +37,41 @@ let _a = "Shubham";
 }
 
 console.log(a);
+
+
+// ------------------------------------------
+// 4. const - Constant Variable
+// ------------------------------------------
+
+const a1 = 6;
+
+// a1 = a1 + 1;
+// ❌ Not allowed because 'a1' is a constant
+
+
+// ------------------------------------------
+// 5. JavaScript Data Types
+// ------------------------------------------
+
+let x = "Harry bhai";  // String
+let y = 22;            // Number
+let z = 3.55;          // Number
+const p = true;        // Boolean
+let q = undefined;     // Undefined
+let r = null;          // Null
+
+
+// Display values
+console.log(x, y, z, p, q, r);
+
+
+// Display data types
+console.log(
+    typeof x,
+    typeof y,
+    typeof z,
+    typeof p,
+    typeof q,
+    typeof r
+);
+
