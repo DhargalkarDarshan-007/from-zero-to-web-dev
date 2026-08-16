@@ -1,9 +1,4 @@
-.container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 208px;
-}
+
 
 .card {
     display: flex;
@@ -11,7 +6,7 @@
     justify-content: center;
     border: 2px solid black;
     padding: 12px;
-    width: 900px;
+    width: 910px;
     margin: 5px;
     cursor: pointer;
 }
