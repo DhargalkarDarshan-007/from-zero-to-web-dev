@@ -1,0 +1,45 @@
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 208px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 12px;
+    width: 900px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.img img {
+    width: 200px;
+}
+
+.text h1,
+p {
+    padding: 2px 0;
+
+}
+
+.img {
+    position: relative;
+}
+
+.capsule {
+    position: absolute;
+    bottom: 4px;
+    z-index: 10;
+    right: 5px;
+    background: #242020;
+    opacity: 0.9;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
