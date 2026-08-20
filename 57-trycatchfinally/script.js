@@ -6,4 +6,11 @@ if (isNaN(a) || isNaN(b)) {
 }
 
 let sum = parseInt(a) + parseInt(b)
-console.log("The sum is ", sum )
+
+let x = 1;
+try {
+    console.log("The sum is ", sum * x)
+
+} catch (error) {
+    console.log("Error aa gaya bhai")
+}
