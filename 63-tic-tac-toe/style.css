@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 435px;
+    height: 500px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -73,6 +73,16 @@ body {
     font-weight: bold;
 }
 
+
+
+.msg-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
 .hide{
     display: none;
 }
