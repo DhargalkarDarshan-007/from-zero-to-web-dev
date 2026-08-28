@@ -17,11 +17,11 @@ const winPatterns = [
     [6, 7, 8]
 ];
 
-const resetGame = ()=>{
-    turno=true;
+const resetGame = () => {
+    turno = true;
     enableBoxes();
     msgContainer.classList.add("hide");
-    
+
 }
 
 boxes.forEach((box) => {
@@ -40,19 +40,33 @@ boxes.forEach((box) => {
     })
 })
 
-const disableBoxes=()=>{
-    for(let box of boxes){
+const disableBoxes = () => {
+    for (let box of boxes) {
         box.disabled = true;
     }
 }
 
-const enableBoxes=()=>{
-    for(let box of boxes){
+const enableBoxes = () => {
+    for (let box of boxes) {
         box.disabled = false;
-        box.innerText="";
+        box.innerText = "";
     }
 }
+// const showWinner = (winner) => {
+//     msg.innerHTML = `Congratulations , Winner is ${winner}`
+//     msgContainer.classList.remove("hide")
+//     disableBoxes();
+//     celebrate();
+// }
+const showWinner = (winner) => {
 
+    msg.innerHTML = `🎉 Congratulations! 🎉 <br> Winner is ${winner} 🏆`;
+
+    msgContainer.classList.remove("hide");
+
+    disableBoxes();
+
+};
 
 
 const checkWinner = () => {
@@ -75,5 +89,70 @@ const checkWinner = () => {
 }
 
 
-newGameBtn.addEventListener("click",resetGame)
-resetbtn.addEventListener("click",resetGame)
+newGameBtn.addEventListener("click", resetGame)
+resetbtn.addEventListener("click", resetGame)
+
+
+
+
+
+
+
+
+
+
+
+
+const celebrate = () => {
+
+    // Big celebration container
+    const celebration = document.createElement("div");
+    celebration.classList.add("celebration");
+
+    celebration.innerHTML = `
+        <div class="celebration-text">
+            🎉🎊🏆🎊🎉
+        </div>
+    `;
+
+    document.body.appendChild(celebration);
+
+    // Create confetti
+    const colors = [
+        "#ff0000",
+        "#00ff00",
+        "#0000ff",
+        "#ffff00",
+        "#ff00ff",
+        "#00ffff",
+        "#ff8800"
+    ];
+
+    for (let i = 0; i < 150; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.classList.add("confetti");
+
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.backgroundColor =
+            colors[Math.floor(Math.random() * colors.length)];
+
+        confetti.style.animationDuration =
+            Math.random() * 3 + 2 + "s";
+
+        confetti.style.animationDelay =
+            Math.random() * 1.5 + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+            confetti.remove();
+        }, 6000);
+    }
+
+    // Remove celebration after 5 seconds
+    setTimeout(() => {
+        celebration.remove();
+    }, 5000);
+};

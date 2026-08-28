@@ -86,3 +86,47 @@ body {
 .hide{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#msg {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    animation: winnerText 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes winnerText {
+    from {
+        transform: scale(1);
+        text-shadow: 0 0 10px gold;
+    }
+
+    to {
+        transform: scale(1.15);
+        text-shadow: 0 0 30px gold, 0 0 60px orange;
+    }
+}
+
