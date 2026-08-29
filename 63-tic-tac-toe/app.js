@@ -17,13 +17,6 @@ const winPatterns = [
     [6, 7, 8]
 ];
 
-const resetGame = () => {
-    turno = true;
-    enableBoxes();
-    msgContainer.classList.add("hide");
-
-}
-
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if (turno) {
@@ -39,35 +32,6 @@ boxes.forEach((box) => {
         checkWinner();
     })
 })
-
-const disableBoxes = () => {
-    for (let box of boxes) {
-        box.disabled = true;
-    }
-}
-
-const enableBoxes = () => {
-    for (let box of boxes) {
-        box.disabled = false;
-        box.innerText = "";
-    }
-}
-// const showWinner = (winner) => {
-//     msg.innerHTML = `Congratulations , Winner is ${winner}`
-//     msgContainer.classList.remove("hide")
-//     disableBoxes();
-//     celebrate();
-// }
-const showWinner = (winner) => {
-
-    msg.innerHTML = `🎉 Congratulations! 🎉 <br> Winner is ${winner} 🏆`;
-
-    msgContainer.classList.remove("hide");
-
-    disableBoxes();
-
-};
-
 
 const checkWinner = () => {
     for (let pattern of winPatterns) {
@@ -85,12 +49,52 @@ const checkWinner = () => {
             }
         }
     }
-
 }
 
 
+// const showWinner = (winner) => {
+//     msg.innerHTML = `Congratulations , Winner is ${winner}`
+//     msgContainer.classList.remove("hide")
+//     disableBoxes();
+//     celebrate();
+// }
+
+
+const showWinner = (winner) => {
+
+    msg.innerHTML = `🎉 Congratulations! 🎉 <br> Winner is ${winner} 🏆`;
+
+    msgContainer.classList.remove("hide");
+
+    disableBoxes();
+
+};
+
+const disableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+}
+
 newGameBtn.addEventListener("click", resetGame)
 resetbtn.addEventListener("click", resetGame)
+
+const resetGame = () => {
+    turno = true;
+    enableBoxes();
+    msgContainer.classList.add("hide");
+
+}
+
+const enableBoxes = () => {
+    for (let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
+
+
+
 
 
 
